@@ -1,150 +1,201 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
+/* src/app/page.module.css */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  color: #333;
+}
 
-  --text-primary: #000;
-  --text-secondary: #666;
+.hero {
+  text-align: center;
+  /* padding: 3rem 1rem; */
+}
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: -1rem;
+}
 
+.presentationDashboard {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Main left screen viewport, control switches on right */
+  gap: 2rem;
+  background: #0f172a; /* Slate black command container */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  /* margin: 3rem 0; */
+  align-items: center;
+}
+
+.mainViewport {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #020617;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
-  flex: 1;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  border: 1px solid #334155;
 }
 
-.main {
-  display: flex;
-  flex: 1;
+.displayImage, .displayVideo {
   width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.intro {
+.fallbackText {
+  color: #94a3b8;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.controlPanel {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+  gap: 1.25rem;
+  padding: 1rem;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.controlPanel h3 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
-}
-
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
+.actionButton {
+  background: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  padding: 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  width: fit-content;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background: #334155;
+  color: #fff;
+  border-color: #475569;
+}
+
+/* THE SELECTION EMULATOR HIGHLIGHTS */
+.activeActionButton {
+  background: linear-gradient(135deg, #0288d1, #0070f3);
+  color: #ffffff;
+  border-color: #0070f3;
+  box-shadow: 0 4px 12px rgba(0, 112, 243, 0.3);
+}
+
+/* .videoBox, .agentBox {
+  background: #111;
+  color: #fff;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+} */
+
+.agentBox {
+  background: linear-gradient(135deg, #0288d1, #0070f3);
+}
+
+.registryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.registryCard {
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+}
+
+.registryCard h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.tag {
+  display: inline-block;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.netLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* src/app/page.module.css (Append to bottom) */
+
+/* Inside src/app/page.module.css */
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.tabsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.tabLink {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #64748b; /* Muted gray text when inactive */
+  font-size: 0.95rem;
   font-weight: 500;
-}
-
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--button-secondary-border);
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
-  }
-}
-
-.code {
-  font-family: var(--font-geist-mono);
-  font-size: 0.9em;
-  background: color-mix(in srgb, currentColor 8%, transparent);
-  padding: 0.1em 0.4em;
   border-radius: 6px;
+  border-bottom: 2px solid transparent; /* Bottom border spacer */
+  transition: all 0.2s ease;
+}
+
+.tabLink:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* THE "YOU ARE HERE" STYLES */
+.activeTab {
+  color: #0070f3; /* Changes text alphabet color to sharp Baanda Blue */
+  background: #f0f7ff; /* Soft tinted background bubble */
+  border-bottom: 2px solid #0070f3; /* Adds a solid bottom anchor border line */
+  font-weight: 600;
 }
