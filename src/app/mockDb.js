@@ -74,4 +74,5 @@ export async function simulateMediaEnrichment() {
   });
 }
 
+export async function fetchAllBusinessRoutes() {}
 
