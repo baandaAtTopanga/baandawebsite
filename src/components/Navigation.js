@@ -43,8 +43,8 @@ export default function Navigation() {
           Reg
         </Link>
         <Link
-          href="/directory"
-          className={getTabClass("/directory")}
+          href="/aicompare"
+          className={getTabClass("/aicompare")}
           style={{ opacity: 0.3 }}
         >
           Comp
