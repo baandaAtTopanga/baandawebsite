@@ -106,7 +106,23 @@ export default function Page({ searchParams }) {
       </section> */}
 
       {/* Geocentric Search Core Section */}
-      <section className={styles.searchSection}>
+      <section className={styles.centeredSection}>
+        <h2 className={styles.mainTitle}>
+          Baanda is your friend humbly at your service
+        </h2>
+        <h3 className={styles.subTitle}>
+          Small businesses owners and entrepreneurs, Baanda is the 'Equilizar' to
+          compete & flourish against large money businesses.{" "}
+        </h3>
+        <h3 className={styles.subTitleTwo}>
+          It provides you all the tools, seamlessly integrated, at your disposal. Np third party solution required.
+        </h3>
+        <h3 className={styles.subTitleTwo}>
+          <b>$0 starting fee</b> for three months & <b>least flat rate after
+          that</b>. Baanda brings your customers to you for free.
+        </h3>
+      </section>
+      {/* <section className={styles.searchSection}>
         <h2>Locate Registered Marketplace Services</h2>
         <p>
           Search across your localized town grid or evaluate matching options
@@ -134,9 +150,9 @@ export default function Page({ searchParams }) {
         >
           <DirectoryResults searchParamsPromise={searchParams} />
         </Suspense>
-      </section>
+      </section> */}
 
-      <section style={{ lineHeight: "1.8", margin: "4rem 0" }}>
+      <section style={{ lineHeight: "1.8", margin: "1rem 0" }}>
         <h2>Why Baanda Implodes the Traditional SaaS Model</h2>
         <p>
           Unlike legacy singleton options that force small local merchants to

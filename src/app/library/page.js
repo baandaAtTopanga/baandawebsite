@@ -15,15 +15,15 @@ export default async function LibraryPage() {
   return (
     <div className={styles.container}>
       <Navigation /> {/* Tabs show here too! */}
-      <nav style={{ padding: "1rem 0", display: "flex", gap: "2rem" }}>
+      {/* <nav style={{ padding: "1rem 0", display: "flex", gap: "2rem" }}>
         <Link href="/" style={{ color: "#333" }}>
           &larr; Home
         </Link>
         <Link href="/solution" style={{ color: "#0070f3" }}>
           Our Solution
         </Link>
-      </nav>
-      <header className={styles.hero} style={{ background: "#334155" }}>
+      </nav> */}
+      <header className={styles.hero} style={{ background: "#fff" }}>
         <h1>Resource & Media Library</h1>
         <p>
           Access our technical blueprints, dynamic presentations, and system

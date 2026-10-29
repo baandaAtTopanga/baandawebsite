@@ -7,7 +7,7 @@ export default function ComparePage() {
   return (
     <div className={styles.container}>
       <Navigation /> {/* Tabs show here too! */}
-      <nav style={{ padding: "1rem 0", display: "flex", gap: "2rem" }}>
+      {/* <nav style={{ padding: "1rem 0", display: "flex", gap: "2rem" }}>
         <Link
           href="/"
           style={{ color: "#333", fontWeight: "bold", textDecoration: "none" }}
@@ -17,11 +17,12 @@ export default function ComparePage() {
         <Link href="/directory" style={{ color: "#666" }}>
           Bazaar Registry Index
         </Link>
-      </nav>
+      </nav> */}
       <header className={styles.hero} style={{ background: "#fff" }}>
-        <h1>Stop App Store Subscription Bloat</h1>
+        <h1>Small Business Software Bloat</h1>
         <p>
-          Compare Baanda vs. Shopify and Squarespace for Unified Local Commerce.
+          Compare Baanda vs. Shopify and Squarespace for Geocentric and
+          E-Commerce.
         </p>
       </header>
       <section style={{ margin: "3rem 0", lineHeight: "1.8" }}>
@@ -42,7 +43,11 @@ export default function ComparePage() {
           entry logging, shipping labels, and metered outreach tools natively
           inside a flat
           <strong> $27/month package</strong>. No plugin configuration
-          conflicts, no multi-invoice app software tracking fees.
+          conflicts, no multi-invoice app software tracking fees. Baanda promise
+          to business owners,{" "}
+          <b>"You do what you do best. Let Baanda do the rest."</b> A small
+          business owner do not need to keep up with technology. That is
+          Baanda's responsibility.
         </p>
       </section>
       {/* Semantic Table Layout for high-relevance Google keyword indexing */}
@@ -116,6 +121,85 @@ export default function ComparePage() {
               </td>
               <td style={{ padding: "0.75rem" }}>
                 Transaction add-ons (2.8% to 5.2%)
+              </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>Geocentricity</strong>
+              </td>
+
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                Baanda defaults to a customer with their local businesses by
+                default, while being open to access all businesses nation wide.
+                It is designed to engage local neighborhood businesses first.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                Not geocentric because it is one-store one web page/site.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                Not geocentric because it is one-store one web page/site.
+              </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>Store Front (Catalog)</strong>
+              </td>
+
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                It is similar to opening a store, or a business, in local mall,
+                or bazaar. A prospect, or customer, steps in via front-entrance
+                to shop. A worker enters through another entrance to work having
+                autorization set by store owner.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                There is a low-level shared selling space. However, for real
+                store front, one needs to set up their store like in a website,
+                or web app. Shopify provides tools to drag and drop to create
+                such website centric stores.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                For a store front, one needs to set up their store like in a
+                website, or web app. Shopify provides tools to drag and drop to
+                create such website centric stores.
+              </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>Accounting System</strong>
+              </td>
+
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                Seamlessly and transparently integrated real time accounting
+                system out of the box with no third pary integration needed.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                No out of box accounting system. Need to integrate with 3rd
+                party tool like Quickbooks (+ $30/mo).
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                No out of box accounting system. Need to integrate with 3rd
+                party tool like Quickbooks (+ $30/mo).
+              </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>Financial Systems</strong>
+              </td>
+
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                Payables, Receivables, Manual and Automated receipts, invoices,
+                expenses attached to auto payment systems.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                It does not provide out of the box financial system. It has
+                add-on 'Shopify Finance' module to handle them. A business
+                owners need to connect to Quickbooks via other tools like
+                'Quickbooks Connector', 'A2X', 'Webgility', or 'MyWork'. The
+                Business Owners are responsible for the integration, themselves
+                or via freelance workers.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                Does not provide out of the box financial systems.
               </td>
             </tr>
             <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
@@ -231,10 +315,10 @@ export default function ComparePage() {
                 <strong>Delivery</strong>
               </td>
               <td style={{ padding: "0.75rem", color: "#0070f3" }}>
-                Over the counter, pickup at certain location, and Shipping
+                Over the counter, pickup at certain location, and Shipping.
               </td>
               <td style={{ padding: "0.75rem" }}>
-                Over the counter, pickup at certain location, and Shipping
+                Over the counter, pickup at certain location, and Shipping.
               </td>
               <td style={{ padding: "0.75rem" }}>
                 <b>Weakest</b> Does not have in entory plan beyound in-and-out
@@ -243,7 +327,7 @@ export default function ComparePage() {
             </tr>
             <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
               <td style={{ padding: "0.75rem" }}>
-                <strong>Custom Services</strong>
+                <strong>Custom Services & Task Mgmt.</strong>
               </td>
               <td style={{ padding: "0.75rem", color: "#0070f3" }}>
                 Feature dedicated client interface for quoting, terms,
@@ -295,16 +379,75 @@ export default function ComparePage() {
             </tr>
             <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
               <td style={{ padding: "0.75rem" }}>
-                <strong>AI Rep (Coming Soon)</strong>
+                <strong>News Bulletin Board</strong>
               </td>
               <td style={{ padding: "0.75rem", color: "#0070f3" }}>
-                Baanda will enable AI centric representative, capable of representing small businesses, via humanoid conversation, to connect prospective customers to business owners, with in-depth information about the prospects needs, urgency etc., assisting small businesses to be seen. They will also allow owners to schedule posting on Social Media like Instagram, TikTok so small business owners do not need to spend hours daily to update. 
+                Comes with News Bulletin, Advertisement, and Deals board for
+                customers, workforce, and prospects.
+              </td>
+              <td style={{ padding: "0.75rem" }}>No such offering.</td>
+              <td style={{ padding: "0.75rem" }}>No such offering. </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>Wish List</strong>
+              </td>
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                Provides an opportunity for business owners to request new
+                features for customized solution. Baanda creates a pipeline and
+                will handle to remit such requests, free of cost, depending on
+                the impact.
+              </td>
+              <td style={{ padding: "0.75rem" }}>No such offering.</td>
+              <td style={{ padding: "0.75rem" }}>No such offering. </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>
+                  AI Representative (Coming Soon)
+                  <br />
+                  Q1 2027
+                </strong>
+              </td>
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                Baanda will enable AI centric representative, capable of
+                representing small businesses, via humanoid conversation, to
+                connect prospective customers to business owners, with in-depth
+                information about the prospects needs, urgency etc., assisting
+                small businesses to be seen. They will also allow owners to
+                schedule posting on Social Media like Instagram, TikTok so small
+                business owners do not need to spend hours daily to update.
               </td>
               <td style={{ padding: "0.75rem" }}>
                 Not planned or in their architecture
               </td>
               <td style={{ padding: "0.75rem" }}>
                 Not planned in their architecture
+              </td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+              <td style={{ padding: "0.75rem" }}>
+                <strong>
+                  AI based Next Gen bi-directional Review and feedback
+                  <br />
+                  Q2 2027
+                </strong>
+              </td>
+              <td style={{ padding: "0.75rem", color: "#0070f3" }}>
+                Baanda will use AI centric humanoid conversation based review or
+                critiques bidirectionally. Because of its multi-tenance nature,
+                Baanda will mine customer's feedback, praise and criticism of
+                businesses while a customer's engagement with multiple
+                businesses will provide a feedback of the customer. Baanda will
+                not provide any 'suggestion or recommentation' on how to act but
+                will provide a DCCS (Dynamic Co-operation Chemistry Scores) as a
+                index for different contexts ranging from -1 to +1.
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                No such feature planned or in their architecture
+              </td>
+              <td style={{ padding: "0.75rem" }}>
+                No such feature planned or in their architecture
               </td>
             </tr>
           </tbody>

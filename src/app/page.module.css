@@ -15,6 +15,8 @@
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: -1rem;
+  margin-top: -1rem;
+  color: #2a9d8f; 
 }
 
 .presentationDashboard {
@@ -165,10 +167,13 @@
 }
 
 .brand {
+  display: flex;
   font-size: 1.25rem;
-  font-weight: 800;
-  color: #0f172a;
-  text-decoration: none;
+  font-weight: 600;
+  align-items: center;
+  gap: 8px; /* Adds a clean, small space between the logo and the text */
+  text-decoration: none; /* Removes the default underline from the link */
+  color: #2a9d8f; /* Inherits text color from parent */
 }
 
 .tabsContainer {
@@ -194,8 +199,54 @@
 
 /* THE "YOU ARE HERE" STYLES */
 .activeTab {
-  color: #0070f3; /* Changes text alphabet color to sharp Baanda Blue */
+  color: #2a9d8f; /* Changes text alphabet color to sharp Baanda Blue */
   background: #f0f7ff; /* Soft tinted background bubble */
-  border-bottom: 2px solid #0070f3; /* Adds a solid bottom anchor border line */
+  border-bottom: 2px solid #2a9d8f; /* Adds a solid bottom anchor border line */
   font-weight: 600;
+}
+
+.centeredSection {
+  display: flex;
+  flex-direction: column; /* Keeps items stacked vertically if there are multiple */
+  align-items: center;    /* Centers items horizontally */
+  width: 100%;            /* Ensures the section spans the full width */
+}
+
+.mainTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #2a9d8f; /* Main color for H2 */
+  font-family: 'Inter', sans-serif; /* Your choice of font style */
+  
+  /* Reset margins to close the vertical gap */
+  margin-top: 10px;
+  line-height: 1.1; 
+}
+
+.subTitle {
+  font-size: .9rem;
+  font-weight: 500;
+  font-style: italic; /* Example font style */
+  color: #008974; /* Main color for H3 */
+  
+  /* Reset top margin to stay close to the H2 */
+  margin-top: 0;
+  margin-bottom: 1rem; 
+  line-height: 1.2;
+}
+
+.subTitleTwo {
+  font-size: .9rem;
+  font-weight: 500;
+  font-style: italic; /* Example font style */
+  color: #008974; /* Main color for H3 */
+  
+  /* Reset top margin to stay close to the H2 */
+  margin-top: -10px;
+  margin-bottom: 1rem;
+  padding-left: 10%;
+  padding-right: 10%; 
+  text-align: "center";
+  font-family: 'Georgia', serif;
+  /* line-height: 1.2; */
 }

@@ -17,7 +17,14 @@ export default function Navigation() {
   return (
     <nav className={styles.navBar}>
       <Link href="/" className={styles.brand}>
-        Baanda.com
+        <img
+          src="/logo.png" // Path to your logo in the public folder
+          alt="Baanda Logo"
+          width={24} // Adjust width as needed (small size)
+          height={24} // Adjust height as needed
+          className={styles.logo} // Optional: for extra logo styling
+        />
+        <span>Baanda</span>
       </Link>
 
       <div className={styles.tabsContainer}>
